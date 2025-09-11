@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro e Login</title>
+  <script src="login_cadastro.js" defer></script>
+</head>
+<body>
+  <div id="cadastro_page">
+    
+    <h2>Cadastro</h2>
+    
+    <form onsubmit="cadastrar(event)">
+      <label for="username_input">Usuário:</label><br>
+      <input type="text" id="username_input" placeholder="Digite seu nome de usuário"><br><br>
+      
+      <label for="email_input">E-mail:</label><br>
+      <input type="email" id="email_input" placeholder="Digite seu e-mail"><br><br>
+      
+      <label for="senha_input">Senha:</label><br>
+      <input type="password" id="senha_input" placeholder="Digite sua senha"><br><br>
+      
+      <button type="submit">Cadastrar</button>
+    </form>
+    
+    <p id="link_login"></p>
+    <p>Já tem uma conta? <a href="#" onclick="login_redirect()">Faça seu login</a></p>
+  
+  </div>
+  
+  <div id="login_page" style="display:none;">
+    <h2>Login</h2>
+    <form onsubmit="logar(event)">
+      <label for="name_account">Usuário:</label><br>
+      <input type="text" id="name_account" placeholder="Digite seu nome de usuário"><br><br>
+      
+      <label for="senha_account">Senha:</label><br>
+      <input type="password" id="senha_account" placeholder="Digite sua senha"><br><br>
+      
+      <button type="submit">Login</button>
+    </form>
+    <p id="cadastro_link"></p>
+    <p>Ainda não tem uma conta? <a href="#" onclick="cadastro_redirect()">Crie uma aqui!</a></p>
+  </div>
+</body>
+</html>
