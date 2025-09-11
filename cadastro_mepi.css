@@ -11,3 +11,102 @@ body {
 .senai {
     width: 30vh;
 }
+.perfil {
+    width: 0vh;
+    position: absolute;
+    top: auto;
+    right: 17vh
+}
+
+body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #f4f4f4;
+                font-family: Arial, sans-serif;
+            }
+
+            #login_page {
+                display: none;
+            }
+
+            .box_cadastro {
+                width: 100%;
+                max-width: 500px;
+                background-color: #fff;
+                padding: 30px;
+                margin-top: 40px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+
+            .login_container {
+                display: flex;
+                width: 90%;
+                max-width: 1000px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                margin-top: 40px;
+            }
+
+            .login_logo {
+                flex: 1;
+                background-color: #e6e6e6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .login_logo img {
+                width: 80%;
+                max-width: 300px;
+                height: auto;
+            }
+
+            .login_form_area {
+                flex: 1;
+                padding: 40px;
+            }
+
+            input, button {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+            }
+
+            button {
+                background-color: #e60000;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #cc0000;
+            }
+
+            h2 {
+                text-align: center;
+                color: #e60000;
+            }
+
+            a {
+                color: #e60000;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    
