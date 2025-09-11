@@ -9,14 +9,10 @@ body {
 }
 
 .senai {
+    margin: 60px;
     width: 30vh;
 }
-.perfil {
-    width: 0vh;
-    position: absolute;
-    top: auto;
-    right: 17vh
-}
+
 
 body {
                 margin: 0;
@@ -37,7 +33,7 @@ body {
             .box_cadastro {
                 width: 100%;
                 max-width: 500px;
-                background-color: #fff;
+                background-color: #ffffff;
                 padding: 30px;
                 margin-top: 40px;
                 border-radius: 8px;
@@ -109,4 +105,14 @@ body {
             a:hover {
                 text-decoration: underline;
             }
-    
+
+            .box_login {
+                width: 100%;
+                max-width: 500px;
+                background-color: #ffffff;
+                padding: 30px;
+                margin-top: 40px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+
