@@ -1,14 +1,31 @@
 .top_navbar {
-  background-color: #bdb9b9;
+  background-color: #ada6a6;
   overflow: hidden;
   padding: 1px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .top_navbar a {
-    float: left;
-  color: #da0e0e;
+  color: #000000;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.player_pic {
+  margin-top: 10px;
+  background-color: #bdb4b4;
+  padding: 30px;
+  padding-left: 1%;
+  padding-right: 119vh;
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 50px;
+}
+
+.font {
+  margin-left: 50vh;
+  margin: 10%;
+  margin-top: -17%;
+  font-size: 3vh;
 }
