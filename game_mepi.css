@@ -1,0 +1,14 @@
+.top_navbar {
+  background-color: #bdb9b9;
+  overflow: hidden;
+  padding: 1px;
+  border-radius: 20px;
+}
+.top_navbar a {
+    float: left;
+  color: #da0e0e;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
