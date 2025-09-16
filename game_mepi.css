@@ -1,31 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+  font-family: "DotGothic16", sans-serif;
+  background-color: #f4f4f4;
+}
+
 .top_navbar {
-  background-color: #ada6a6;
+  background-color: #2b2a2a2f;
   overflow: hidden;
   padding: 1px;
   border-radius: 10px;
 }
 .top_navbar a {
-  color: #000000;
+  color: #390888;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 17px;
+  text-shadow: 0px 2px 0px rgb(255, 255, 255);
+  display: inline-block;
 }
 
 .player_pic {
   margin-top: 10px;
-  background-color: #bdb4b4;
+  background-color: #2b2a2a2f;
   padding: 30px;
   padding-left: 1%;
   padding-right: 119vh;
   border-radius: 15px;
   margin-top: 10px;
-  width: 50px;
+  width: 15vh;
 }
 
 .font {
   margin-left: 50vh;
   margin: 10%;
-  margin-top: -17%;
+  margin-top: -31vh;
   font-size: 3vh;
+  text-shadow: 0px 3.4px 0px rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+}
+
+.voltar_home a {
+  text-decoration: none;
+  color: #390888;
+}
+
+.select a {
+  text-decoration: none;
+  color: #390888;
 }
