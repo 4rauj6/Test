@@ -10,15 +10,17 @@
 
   </head>
   <body>
-  
+
+    <button class="hamburger" id="hamburger" onclick="toggleSidebar()">☰</button>
+    
     <div class="top_navbar" id="top_navbar">
 
       <a href="game_cartas.html">Home Page</a>
       <a href="cadastro_mepi.html">Cadastro</a>
       <a href="#perfil" onclick="mostrar_perfil()">Perfil</a>
+      <a href="mailto:joaovas123m@gmail.com">Avaliações</a>
 
     </div>
-
 
     <div id="perfil_player" style="display: none;">
 
@@ -34,14 +36,27 @@
 
     <div class="voltar_home" id="voltar_home" style="display: none;">
 
-      <a href="game_cartas.html"><img src="1410611-200.png" style="width:42px;height:42px;"></a>
+      <a href="game_cartas.html">⬅</a>
 
     </div>
 
     <div  class="select" id="select" style="display: block;">
 
       <a href="#button_game" onclick="iniciar_jogo()">Jogar</a>
-      <h1></h1>
+
+    </div>
+
+    <div class="game" id="game">
+
+      <h3>pergunta</h1>
+
+      <div class="cartas" style="display: none;">
+
+        <img src="pixil-frame-0_9.png" id="cartinhas" class="cartinhas">
+        <p class="imagem_problema">imagem</p>
+        <p>respostas</p>
+
+      </div>
 
     </div>
 
