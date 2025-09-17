@@ -1,5 +1,6 @@
 function home_page() {
   document.getElementById("voltar_home").style.display = "none";
+  document.getElementById("cartas").style.display = "none";
 }
 
 function mostrar_perfil() {
@@ -13,6 +14,7 @@ function iniciar_jogo() {
   document.getElementById("select").style.display = "none";
   document.getElementById("voltar_home").style.display = "block";
   document.getElementById("hamburger").style.display = "none";
+  document.getElementById("cartas").style.display = "block";
 }
 
 function toggleSidebar() {
