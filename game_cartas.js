@@ -1,44 +1,51 @@
+window.onload = function() {
+  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+  if (usuarioLogado && usuarioLogado.nome) {
+    document.getElementById("nickname_player").textContent = `Nome: ${usuarioLogado.nome}`;
+  }
+};
+
 function home_page() {
   document.getElementById("voltar_home").style.display = "none";
   document.getElementById("cartas").style.display = "none";
+  document.getElementById("top_navbar").style.display = "block";
 }
 
 function mostrar_perfil() {
   document.getElementById("perfil_player").style.display = "block";
   document.getElementById("select").style.display = "none";
-  document.getElementById("voltar_home").style.display = "none";
+  document.getElementById("voltar_home").style.display = "block";
+  document.getElementById("top_navbar").style.display = "none";
+
+  mostrarTempoPerfil();
 }
 
 function iniciar_jogo() {
-  document.getElementById("top_navbar").style.display = "none";
   document.getElementById("select").style.display = "none";
   document.getElementById("voltar_home").style.display = "block";
-  document.getElementById("hamburger").style.display = "none";
-  document.getElementById("cartas").style.display = "block";
+  document.getElementById("perfil_player").style.display = "none";
+  document.getElementById("top_navbar").style.display = "none";
 }
 
-function toggleSidebar() {
-  const sidebar = document.getElementById("top_navbar");
-  const hamburger = document.querySelector(".hamburger");
+let horasAcumuladas = parseFloat(localStorage.getItem("horasAcumuladas")) || 0;
 
-  sidebar.classList.toggle("active");
+let entradaSessao = Date.now();
 
-  if (sidebar.classList.contains("active")) {
-    hamburger.style.display = "none";
-  } else {
-    hamburger.style.display = "block";
-  }
+function salvarTempo() {
+  const agora = Date.now();
+  const tempoSessao = (agora - entradaSessao) / (100 * 60 * 60);
+
+  horasAcumuladas += tempoSessao;
+  localStorage.setItem("horasAcumuladas", horasAcumuladas);
+
+  entradaSessao = agora;
 }
 
-document.addEventListener("click", function (event) {
-  const sidebar = document.getElementById("top_navbar");
-  const hamburger = document.querySelector(".hamburger");
+function mostrarTempoPerfil() {
+  const horasSalvas = parseFloat(localStorage.getItem("horasAcumuladas")) || 0;
+  document.getElementById("game_timer").innerText = horasSalvas.toFixed(2);
+}
 
-  const clickedInsideSidebar = sidebar.contains(event.target);
-  const clickedHamburger = hamburger.contains(event.target);
+setInterval(salvarTempo, 1000);
 
-  if (sidebar.classList.contains("active") && !clickedInsideSidebar && !clickedHamburger) {
-    sidebar.classList.remove("active");
-    hamburger.style.display = "block";
-  }
-});
+window.addEventListener("beforeunload", salvarTempo);

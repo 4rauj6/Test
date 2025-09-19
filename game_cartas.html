@@ -11,26 +11,13 @@
   </head>
   <body>
 
-    <button class="hamburger" id="hamburger" onclick="toggleSidebar()">☰</button>
-    
     <div class="top_navbar" id="top_navbar">
 
-      <a href="game_cartas.html">Home Page</a>
+      <a href="https://www.fiema.org.br/senai "><img src="SENAI_São_Paulo_logo.png" class="senai_logo"></a><br>
+      <a href="#mepi_game" onclick="iniciar_jogo()">Jogar</a>
       <a href="cadastro_mepi.html">Cadastro</a>
       <a href="#perfil" onclick="mostrar_perfil()">Perfil</a>
       <a href="mailto:joaovas123m@gmail.com">Avaliações</a>
-
-    </div>
-
-    <div id="perfil_player" style="display: none;">
-
-      <div class="profile_page">
-
-        <img src="profile_img-removebg-preview.png" id="player_pic" class="player_pic">
-        <p class="font">Rank: Iniciante</p>
-        <p class="font">Nome: Jogador</p>
-
-      </div>
 
     </div>
 
@@ -40,25 +27,30 @@
 
     </div>
 
-    <div  class="select" id="select" style="display: block;">
+     <div id="perfil_player" style="display: none;">
 
-      <a href="#button_game" onclick="iniciar_jogo()">Jogar</a>
+      <div class="profile_page">
 
-    </div>
-
-    <div class="game" id="game">
-
-      <h3>pergunta</h1>
-
-      <div class="cartas" style="display: none;">
-
-        <img src="pixil-frame-0_9.png" id="cartinhas" class="cartinhas">
-        <p class="imagem_problema">imagem</p>
-        <p>respostas</p>
+        <img src="3d-illustration-human-avatar-profile_23-2150671142.jpg" id="player_pic" class="player_pic">
+        <p class="font">Horas jogadas: <span id="game_timer">0</span></p>
+        <p class="font" id="rank_player">Rank: Iniciante</p>
+        <p class="font" id="nickname_player">Nome:</p>
 
       </div>
 
     </div>
+
+    <div  class="select" id="select" style="display: block;">
+      
+      <div class="game" id="game">
+
+        
+
+      </div>
+    
+    </div>
+
+    
 
   </body>
 </html>
